@@ -1,6 +1,6 @@
-# 4️⃣ Automation Project – Beginner
+# 4️⃣ Automation Project
 
-**Title:** Basic Log Analysis Automation Using Python
+**Title:** Log Analysis Automation Using Python
 
 ---
 
