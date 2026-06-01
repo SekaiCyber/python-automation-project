@@ -65,11 +65,11 @@ After counting, the script loops through each IP and its count. The condition `i
 
 | # | Screenshot | Description |
 |---|---|---|
-| 1 | *(paste image)* | Project directory created and navigated into |
-| 2 | *(paste image)* | `security.log` contents verified |
-| 3 | *(paste image)* | Nano editor with code visible |
-| 4 | *(paste image)* | Script output – suspicious IP flagged |
-| 5 | *(paste image)* | File listing showing both files |
+| 1 | ![mkdir](screenshots/02.png) | Project directory created and navigated into |
+| 2 | ![log file](screenshots/03.png) | `security.log` contents verified |
+| 3 | ![nano](screenshots/04.png) | Nano editor with code visible |
+| 4 | ![output](screenshots/05.png) | Script output – suspicious IP flagged |
+| 5 | ![files](screenshots/06.png) | File listing showing both files |
 
 ---
 
