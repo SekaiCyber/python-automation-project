@@ -23,82 +23,6 @@ Build a Python script to:
 
 ---
 
-## 📋 Step-by-Step
-
-**Step 1 – Open Terminal**
-
-Press `Command (⌘) + Space`, type Terminal and press Enter.
-
-📸 *Screenshot 1: Terminal window open*
-
----
-
-**Step 2 – Create Project Folder**
-
-```bash
-mkdir log_parser_project
-cd log_parser_project
-```
-
-📸 *Screenshot 2: Folder created, prompt inside new directory*
-
----
-
-**Step 3 – Create the Log File**
-
-```bash
-cat > security.log << 'EOF'
-FAILED LOGIN 192.168.1.10
-FAILED LOGIN 192.168.1.10
-FAILED LOGIN 192.168.1.10
-FAILED LOGIN 192.168.1.10
-FAILED LOGIN 192.168.1.10
-FAILED LOGIN 10.0.0.5
-EOF
-```
-
-Verify it was created:
-
-```bash
-cat security.log
-```
-
-📸 *Screenshot 3: Output of `cat security.log` showing all 6 lines*
-
----
-
-**Step 4 – Create the Python Script**
-
-```bash
-nano log_parser.py
-```
-
-Paste the code in, then press `Control + X` → `Y` → `Enter` to save.
-
-📸 *Screenshot 4: Nano editor open with code visible*
-
----
-
-**Step 5 – Run the Script**
-
-```bash
-python3 log_parser.py
-```
-
-📸 *Screenshot 5 (most important): Terminal output showing the suspicious IP result*
-
----
-
-**Step 6 – Confirm Project Files**
-
-```bash
-ls -l
-```
-
-📸 *Screenshot 6: File listing showing both `security.log` and `log_parser.py`*
-
----
-
 ## 💻 Code
 
 ```python
@@ -141,12 +65,11 @@ After counting, the script loops through each IP and its count. The condition `i
 
 | # | Screenshot | Description |
 |---|---|---|
-| 1 | *(paste image)* | Terminal open |
-| 2 | *(paste image)* | Project folder created |
-| 3 | *(paste image)* | `security.log` contents verified |
-| 4 | *(paste image)* | Nano editor with code |
-| 5 | *(paste image)* | Script output – suspicious IP flagged |
-| 6 | *(paste image)* | File listing showing both files |
+| 1 | *(paste image)* | Project directory created and navigated into |
+| 2 | *(paste image)* | `security.log` contents verified |
+| 3 | *(paste image)* | Nano editor with code visible |
+| 4 | *(paste image)* | Script output – suspicious IP flagged |
+| 5 | *(paste image)* | File listing showing both files |
 
 ---
 
