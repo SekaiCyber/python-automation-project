@@ -1,6 +1,4 @@
-# 4️⃣ Automation Project
-
-**Title:** Log Analysis Automation Using Python
+# Log Analysis Automation Using Python
 
 ---
 
