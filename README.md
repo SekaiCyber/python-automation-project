@@ -49,15 +49,15 @@ for ip, count in counts.items():
 
 **Why Counter?**
 
-`Counter` is a built-in Python class from the `collections` module. It automatically counts how many times each unique value appears in a list. Without it, you would need to write a manual loop to track and increment counts yourself. It keeps the code clean and efficient.
+`Counter` is the built-in Python class from the `collections` module, that automatically counts how many times each unique value appears on a list. Without it, you would have to write a manual loop to keep track and increment counts yourself. This keeps the code efficient and clean.
 
 **How Parsing Works**
 
-The script reads `security.log` one line at a time. For each line, it checks whether `"FAILED LOGIN"` appears. If it does, `line.split()[-1]` breaks the line into a list of words and selects the last item — the IP address. That IP is added to the `failed_ips` list. This is called **log parsing** — extracting useful data from raw text.
+The script reads `security.log` line by line. For each line, it checks whether `"FAILED LOGIN"` occurs. If it does, `line.split()[-1]` breaks the line into a list of words and chooses the last item, being the ip address. That IP is added to the `failed_ips` list. This is known as **log parsing** — extracting useful data from raw text.
 
 **Threshold Logic**
 
-After counting, the script loops through each IP and its count. The condition `if count >= 5` flags any IP with five or more failed attempts as suspicious. This mirrors how real security tools like **Fail2Ban** work — alerting only when a pattern crosses a defined limit, not on every single failure.
+After counting is done, the script loops through each IP and its count. The condition `if count >= 5` flags any IP with five or more failed attempts as suspicious. This demonstration mirrors how real security tools like **Fail2Ban** work. Only alerting when a pattern crosses a defined limit, not on every single failure.
 
 ---
 
@@ -75,14 +75,14 @@ After counting, the script loops through each IP and its count. The condition `i
 
 ## 💡 Improvement Ideas
 
-- **Export to CSV** — Write results to a `.csv` file using Python's `csv` module for easier analysis
-- **Send Email Alert** — Use `smtplib` to automatically send an alert when a suspicious IP is detected
-- **Add Timestamp Filtering** — Filter log entries by time window to avoid false alerts from old data
+- **Export to CSV** — Write results to a `.csv` file using Python's `csv` module for simpler analysis
+- **Send Email Alert** — Use `smtplib` to send an alert automatically when a suspicious IP is detected
+- **Add Timestamp Filtering** — To filter entry logs by time windows to avoid false alerts from old data
 
 ---
 
 ## ⚠️ Notes
 
-- The IPs used (`192.168.1.10`, `10.0.0.5`) are **private range IPs** — they are not real or traceable
-- This is a **simulated environment** for educational purposes only
-- All screenshots have been reviewed to remove personal identifying information
+- The IP addresses used (`192.168.1.10`, `10.0.0.5`) are **private range IPs** — they are not traceable or real
+- This is a **simulated environment** and is for educational purposes only
+- All screenshots have been reviewed to redact personal identifying information
