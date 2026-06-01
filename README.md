@@ -51,7 +51,7 @@ for ip, count in counts.items():
 
 **How Parsing Works**
 
-The script reads `security.log` line by line. For each line, it checks whether `"FAILED LOGIN"` occurs. If it does, `line.split()[-1]` breaks the line into a list of words and chooses the last item, being the ip address. That IP is added to the `failed_ips` list. This is known as **log parsing** — extracting useful data from raw text.
+The script reads `security.log` line by line. For each line, it checks whether `"FAILED LOGIN"` occurs. If it does, `line.split()[-1]` breaks the line into a list of words and chooses the last item, being the ip address. That IP is added to the `failed_ips` list. This is known as **log parsing**  extracting useful data from raw text.
 
 **Threshold Logic**
 
@@ -66,16 +66,16 @@ After counting is done, the script loops through each IP and its count. The cond
 | 1 | ![mkdir](screenshots/02.png) | Project directory created and navigated into |
 | 2 | ![log file](screenshots/03.png) | `security.log` contents verified |
 | 3 | ![nano](screenshots/04.png) | Nano editor with code visible |
-| 4 | ![output](screenshots/05.png) | Script output – suspicious IP flagged |
+| 4 | ![output](screenshots/05.png) | Script output, suspicious IP flagged |
 | 5 | ![files](screenshots/06.png) | File listing showing both files |
 
 ---
 
 ## 💡 Improvement Ideas
 
-- **Export to CSV** — Write results to a `.csv` file using Python's `csv` module for simpler analysis
-- **Send Email Alert** — Use `smtplib` to send an alert automatically when a suspicious IP is detected
-- **Add Timestamp Filtering** — To filter entry logs by time windows to avoid false alerts from old data
+- **Export to CSV**  Write results to a `.csv` file using Python's `csv` module for simpler analysis
+- **Send Email Alert**  Use `smtplib` to send an alert automatically when a suspicious IP is detected
+- **Add Timestamp Filtering**  To filter entry logs by time windows to avoid false alerts from old data
 
 ---
 
